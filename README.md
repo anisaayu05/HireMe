@@ -26,7 +26,7 @@
 Proyek ini merupakan bagian dari mata kuliah Pemrograman Mobile yang fokus pada pengembangan aplikasi dengan Flutter dan Firebase. Aplikasi ini dirancang untuk memberikan pengalaman pencarian kerja yang efisien dan modern.
 
 ### 🎨 Prototipe
-Lihat desain UI/UX lengkap di [Figma Prototype](https://www.figma.com/design/bCdjLRwIq7X6V5IIX8K3rW/HireMe-App?node-id=0-1&t=wLRhqnUXhGlxpW69-1)
+Lihat desain UI/UX lengkap di [Figma Prototype](https://www.figma.com/design/q5WMLZcS50J5bUf1KeXcyy/HireMe?node-id=0-1&t=xE9f04fj3KZ2MzFS-1)
 
 ## ⭐ Fitur Utama
 
@@ -60,7 +60,7 @@ Lihat desain UI/UX lengkap di [Figma Prototype](https://www.figma.com/design/bCd
 
 1. Clone repositori
 ```bash
-https://github.com/FaizalTrianto03/Hireme.id
+https://github.com/anisaayu05/HireMe.git
 ```
 
 2. Masuk ke direktori proyek
