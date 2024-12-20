@@ -1,88 +1,111 @@
-# HireMe - Aplikasi Pencarian Pekerjaan
+# 🎯 Hire Me
 
-## Deskripsi Proyek
+<div align="center">
 
-Proyek ini adalah bagian dari mata kuliah Pemrograman Mobile untuk mengajarkan pengembangan aplikasi mobile dengan **Flutter**. Fokus utama mencakup **navigasi**, **state management**, dan **akses data**.
+![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
-### Tautan Prototipe Figma
-Untuk melihat prototipe aplikasi HireMe, silakan kunjungi: [Figma Prototype](https://www.figma.com/design/bCdjLRwIq7X6V5IIX8K3rW/HireMe-App?node-id=0-1&t=FbXNFhbINDSmzJEv-1) <!-- Tambahkan tautan prototipe Figma yang sesuai -->
+**Hire Me** adalah platform modern yang menghubungkan pelamar kerja dan perusahaan melalui fitur-fitur interaktif yang inovatif.
+
+[Lihat Demo](https://your-demo-link.com) · [Laporkan Bug](https://github.com/username/hire-me/issues) · [Request Fitur](https://github.com/username/hire-me/issues)
+
+</div>
+
+## 📋 Daftar Isi
+- [Tentang Proyek](#-tentang-proyek)
+- [Fitur Utama](#-fitur-utama)
+- [Teknologi](#-teknologi)
+- [Memulai](#-memulai)
+- [Peran Pengguna](#-peran-pengguna)
+- [Kontributor](#-kontributor)
+- [Lisensi](#-lisensi)
+
+## 🎯 Tentang Proyek
+
+Proyek ini merupakan bagian dari mata kuliah Pemrograman Mobile yang fokus pada pengembangan aplikasi dengan Flutter dan Firebase. Aplikasi ini dirancang untuk memberikan pengalaman pencarian kerja yang efisien dan modern.
+
+### 🎨 Prototipe
+Lihat desain UI/UX lengkap di [Figma Prototype](https://www.figma.com/design/bCdjLRwIq7X6V5IIX8K3rW/HireMe-App?node-id=0-1&t=wLRhqnUXhGlxpW69-1)
+
+## ⭐ Fitur Utama
+
+| Fitur | Deskripsi |
+|-------|-----------|
+| 🔍 Pencarian Cerdas | Pencarian pekerjaan dengan filter yang dapat disesuaikan |
+| 📝 Manajemen Lamaran | Pelacakan status lamaran secara real-time |
+| 👥 Multi-role System | Sistem dengan 4 peran berbeda (Admin, Recruiter, Job Seeker, Guest) |
+| 📱 Responsive Design | Antarmuka yang responsif untuk berbagai ukuran layar |
+
+## 🛠 Teknologi
+
+| Kategori | Teknologi |
+|----------|-----------|
+| Frontend | Flutter |
+| Backend | Firebase |
+| Database | Firebase Firestore |
+| Storage | Firebase Storage |
+| State Management | Provider / Riverpod |
+
+## 🚀 Memulai
+
+### Prasyarat
+
+- Flutter SDK v3.x+
+- Firebase CLI
+- Akun Firebase
+- Git
+
+### Instalasi
+
+1. Clone repositori
+```bash
+https://github.com/FaizalTrianto03/Hireme.id
+```
+
+2. Masuk ke direktori proyek
+```bash
+cd hire-me
+```
+
+3. Install dependensi
+```bash
+flutter pub get
+```
+
+4. Konfigurasi Firebase
+- Unduh `google-services.json` (Android) dan `GoogleService-Info.plist` (iOS)
+- Tempatkan file di lokasi yang sesuai dalam proyek
+
+5. Jalankan aplikasi
+```bash
+flutter run
+```
+
+## 👥 Peran Pengguna
+
+| Peran | Akses | Fitur Utama |
+|-------|-------|-------------|
+| 👑 Admin | Penuh | <ul><li>Manajemen pengguna</li><li>Kelola artikel & event</li><li>Manajemen sistem</li></ul> |
+| 💼 Recruiter | Terbatas | <ul><li>Posting lowongan</li><li>Review lamaran</li><li>Update status lamaran</li></ul> |
+| 👤 Job Seeker | Terbatas | <ul><li>Cari pekerjaan</li><li>Kirim lamaran</li><li>Track status</li></ul> |
+| 👀 Guest | Minimal | <ul><li>Lihat lowongan</li><li>Informasi umum</li></ul> |
+
+## 👨‍💻 Kontributor
+
+| Nama | NIM |
+|------|-----|
+| Anisa Ayu Nabila Nur Rahmah | 202210370311009 |
+| Faizal Qadri Trianto | 202210370311015 |
+| Rifky Ramadany Majid | 202210370311020 |
+| Febri Bagus Tri Wibowo | 202210370311029 |
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 ---
 
-## Deskripsi Aplikasi
-
-**HireMe** adalah platform modern yang dirancang untuk membantu pengguna dalam mencari pekerjaan secara efisien. Dengan antarmuka pengguna yang intuitif, aplikasi ini menggunakan Flutter untuk memberikan pengalaman pengguna yang mulus di perangkat mobile. Fokus utama aplikasi ini meliputi:
-
-- **Navigasi** yang mudah
-- **Manajemen status** yang efektif
-- **Akses data** yang aman
-
----
-
-## Navigasi
-
-Aplikasi ini memiliki **navigation bar** yang terdiri dari empat tab yang dapat diakses pengguna:
-
-1. **Home**
-2. **Browse**
-3. **Applied**
-4. **Profile**
-
----
-
-## Halaman dan Fungsionalitas
-
-### 1. Home
-
-- **Fitur Utama**: Menampilkan tombol **Browse Pekerjaan** yang mengarahkan pengguna ke halaman **Browse**.
-- **Informasi**: Keterangan tentang berbagai situs pencarian pekerjaan, termasuk **LinkedIn**.
-- **Pengguna Belum Mendaftar**: Menampilkan pesan yang mendorong pengguna untuk **Create Akun** agar dapat mengakses semua fitur aplikasi.
-- **Desain UI**: Desain antarmuka yang menarik secara visual dengan warna cerah dan elemen yang jelas.
-
-### 2. Browse
-
-- **Pengguna Belum Login**: Masih dapat melihat daftar pekerjaan, tetapi tidak dapat melihat rincian atau melamar pekerjaan.
-- **Pengguna Setelah Login**: Memiliki akses penuh ke rincian pekerjaan, termasuk:
-  - **Judul Pekerjaan**
-  - **Deskripsi Pekerjaan**
-  - **Persyaratan**
-  - **Deskripsi Perusahaan**
-  - **Tombol Lamaran** untuk memulai proses aplikasi.
-  
-#### Proses Melamar Pekerjaan
-
-1. **Mengisi Formulir Lamaran**: Pengguna mengisi informasi pribadi, pengalaman kerja, dan pendidikan.
-2. **Upload CV**: CV diunggah dalam format PDF atau DOCX dengan instruksi yang jelas.
-3. **Konfirmasi Lamaran**: Pengguna menerima konfirmasi setelah melamar.
-
-### 3. Applied
-
-- **Pengguna Belum Login**: Halaman tidak dapat diakses.
-- **Pengguna Setelah Login**: Dapat melihat daftar pekerjaan yang telah dilamar dan status setiap lamaran:
-  - **Status Lamaran**: Menampilkan status apakah dalam proses, diterima, atau ditolak.
-  - **Riwayat Lamaran**: Melihat waktu dan tanggal lamaran, serta opsi untuk mengulangi atau membatalkan lamaran.
-- **Desain yang Intuitif**: Tabel atau daftar yang jelas untuk menampilkan informasi.
-
-### 4. Profile
-
-- **Pengguna Belum Login**: Tidak dapat mengakses halaman.
-- **Pengguna Setelah Login**: Dapat memperbarui informasi akun seperti nama, email, foto profil, dan preferensi pencarian pekerjaan.
-- **Riwayat dan Notifikasi**: Melihat notifikasi terkait lamaran dan pembaruan dari perusahaan.
-
----
-
-## Verifikasi Dua Langkah (OTP)
-
-Fitur keamanan tambahan yang membantu melindungi akun pengguna.
-
-- **Tujuan OTP**: Mengurangi risiko pencurian identitas dengan memastikan hanya pengguna sah yang dapat mengakses akun.
-- **Implementasi**:
-  - OTP dikirim melalui **SMS** atau **email** setelah login.
-  - Pengguna dapat memilih metode pengiriman OTP saat membuat akun.
-- **Manfaat**: Pengguna merasa lebih aman dan memiliki kontrol lebih besar atas akses ke akun.
-
----
-
-## Kesimpulan
-
-Aplikasi HireMe dirancang untuk memberikan pengalaman pencarian pekerjaan yang **efektif** dan **aman** bagi pengguna. Dengan navigasi yang jelas, antarmuka yang menarik, fitur keamanan yang kuat, dan proses lamaran yang mudah, pengguna dapat menjelajahi dan melamar pekerjaan dengan percaya diri.
+<div align="center">
+Dibuat dengan ❤️ oleh Tim Hire Me
+</div>
